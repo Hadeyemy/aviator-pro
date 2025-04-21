@@ -7,7 +7,7 @@ export default function App() {
   const [strategy, setStrategy] = useState(null);
 
   const handlePredict = async () => {
-    const res = await fetch("https://aviator-pro-back.onrender.com/predict", {
+    const res = await fetch("https://aviator-backend-ai.onrender.com/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ history, bankroll }),
